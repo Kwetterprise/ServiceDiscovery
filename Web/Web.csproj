@@ -6,6 +6,7 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <nullable>enable</nullable>
     <RootNamespace>Kwetterprise.ServiceDiscovery.Web</RootNamespace>
+    <DockerfileFile>..\Dockerfile</DockerfileFile>
   </PropertyGroup>
 
   <ItemGroup>
