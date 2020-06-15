@@ -24,6 +24,9 @@
                 return;
             }
 
+            var duplicate = this.services.SingleOrDefault(x => x.Value.Url == service.Url && x.Key != service.Guid);
+
+            this.services.Remove(duplicate.Key);
             this.services.Add(service.Guid, new ExtendedService(service, ServiceStatus.Ok));
         }
 
